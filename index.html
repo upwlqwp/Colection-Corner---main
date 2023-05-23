@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Мебель и декор для дома</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top header__info">
+          <ul class="information">
+            <li class="information__item information__item--more">
+              <a class="information__link link-animation" href="#">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#icon-del"></use>
+                </svg>
+                Доставка
+              </a>
+            </li>
+            <li class="information__item information__item--more">
+              <a class="information__link link-animation" href="#">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#location"></use>
+                </svg>
+                Адреса
+              </a>
+            </li>
+          </ul>
+
+          <ul class="information">
+            <li class="information__item">
+              <a class="information__link link-animation" href="index.html">О нас</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link link-animation" href="blog-page.html">Статьи</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link link-animation" href="contact-page.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__inner">
+          <button class="header__burger-btn" id="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="menu" id="menu">
+            <ul class="information">
+              <li class="information__item information__item--more">
+                <a class="information__link link-animation" href="#">
+                  Доставка
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#icon-del"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="information__item information__item--more">
+                <a class="information__link link-animation" href="#">
+                  Адреса
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#location"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="information__item">
+                <a class="information__link link-animation" href="index.html">О нас
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#about-us"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="information__item">
+                <a class="information__link link-animation" href="blog-page.html">Статьи
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#blog"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="information__item">
+                <a class="information__link link-animation" href="contact-page.html">Контакты
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#contact"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__bottom">
+          <a class="logo" href="#">
+            <img src="images/logo.svg" alt="logo" height="60" />
+          </a>
+
+          <div class="search">
+            <div class="search__box">
+              <input class="search__input" type="text" id="input-box" placeholder="search" autocomplete="off" />
+              <button class="search__btn"></button>
+            </div>
+            <div class="search__result"></div>
+          </div>
+          <!--   <ul class="search__result-list">
+                        <li class="search__result-item"> Популярные</li>
+                        <li class="search__result-item"> Гостиная</li>
+                        <li class="search__result-item">Спальня</li>
+                        <li class="search__result-item">Детская</li>
+                        <li class="search__result-item">Ванная</li>
+                      </ul>-->
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#user-link"></use>
+                </svg>
+                <span class="sr-only">Перейти к профилю</span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+                <span class="sr-only"> перейти в избранное</span>
+                <span class="user-nav__num"> 12 </span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+                <span class="sr-only"> перейти в корзину</span>
+                <span class="user-nav__num"> 12 </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero-slider">
+        <h1 class="sr-only">лучший магазин</h1>
+        <ul class="hero-slider__inner">
+          <li class="hero-slider__items" style="background-image: url(images/hero-slider/slider1.jpg)">
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    изысканные подарки
+                    <span class="hero-slider__title hero-slider__title--accent">для любого случая</span>
+                  </h2>
+                  <a class="hero-slider__link button" href="#">перейти</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="hero-slider__items" style="background-image: url(images/hero-slider/slider2.jpg)">
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    декор
+                    <span class="hero-slider__title hero-slider__title--accent">
+                      который украсит любой интерьерs</span>
+                  </h2>
+                  <div class="hero-slider__text">
+                    <p>универсальные предметы</p>
+                  </div>
+                  <a class="hero-slider__link button" href="#">перейти</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="hero-slider__items" style="background-image: url(images/hero-slider/slider3.jpg)">
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    большой выбор
+                    <span class="hero-slider__title hero-slider__title--accent">в новой коллекции</span>
+                  </h2>
+                  <div class="hero-slider__text">
+                    <p>необычные сочетания</p>
+                    <a class="hero-slider__link button" href="#">перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="sr-only">наши преимущества</h2>
+        <div class="container">
+          <ul class="advantages__list">
+            <li class="advantages__item" style="background-image: url(images/header/delivery.svg)">
+              <span class="advantages__text">Доставка на следующий день & 24/7 дней в неделю
+              </span>
+            </li>
+            <li class="advantages__item" style="background-image: url(images/header/budget.svg)">
+              <span class="advantages__text">Продукты для любого бюджета</span>
+            </li>
+            <li class="advantages__item" style="background-image: url(images/header/credit.svg)">
+              <span class="advantages__text">Быстрое оформление кредита</span>
+            </li>
+            <li class="advantages__item" style="background-image: url(images/header/free.svg)">
+              <span class="advantages__text">Бесплатная доставка свыше $199</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <ul class="order__list">
+            <li class="order__item">
+              <img class="order__img" src="images/on-order/order1.jpg" alt="" />
+              <h3 class="order__title">Дизайнерское освещение в квартире</h3>
+              <p class="order__text">
+                Продуманная система освещения — важный шаг на пути к стильному
+                и гармоничному интерьеру. Из этой статьи вы узнаете, что такое
+                светодизайн, какие тренды сейчас на пике, как преобразить
+                комнаты с помощью света.
+              </p>
+              <a class="order__link button" href="#">заказать </a>
+            </li>
+            <li class="order__item">
+              <img class="order__img" src="images/on-order/order2.jpg" alt="" />
+              <h3 class="order__title">
+                Текстиль для дома с неповторимыми изделиями
+              </h3>
+              <p class="order__text">
+                Текстиль является одним из важнейших элементов дизайна
+                интерьера домов и квартир. Мягкий и уютный текстиль выполняет
+                особую миссию, обеспечивая комфорт и расставляя в интерьере
+                необходимые акценты.
+              </p>
+              <a class="order__link button" href="#">заказать </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="top-products section">
+        <div class="container">
+          <h2 class="title">Популярные категории</h2>
+          <p class="top-products__subtitle">
+            Выберите категорию или перейдите в раздел с удобным фильтром по
+            товару
+          </p>
+          <div data-ref="container-1">
+            <ul class="products-menu">
+              <li class="products-menu__item">
+                <button class="products-menu__btn" data-filter="all" type="button">
+                  Популярные
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button class="products-menu__btn" data-filter=".category-a" type="button">
+                  Гостиная
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button class="products-menu__btn" data-filter=".category-b" type="button">
+                  Спальня
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button class="products-menu__btn" data-filter=".category-c" type="button">
+                  Детская
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button class="products-menu__btn" data-filter=".category-d" type="button">
+                  Ванная
+                </button>
+              </li>
+            </ul>
+            <ul class="top-products__list">
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/armchair.jpg" alt="armchair" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">кресла</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      79.00-149.00 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only">Добавить в избранное </span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only"> Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/carpet.jpg" alt="carpet" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">Диваны</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      139.00-269.00 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only">Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only"> Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/chairs.jpg" alt="chairs" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">столы</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      109.00-249.00<span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only">Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only">Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-b">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/coffee-table.jpg" alt="coffee-table" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">шкафы</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      135.00-269.00 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only">Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-c">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/for-storage.jpg" alt="for storage" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">шторы</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      65.00-175.00 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only">Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-d">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/wooden.jpg" alt="wooden" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">мебель из дерева</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">29 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only"> Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-c">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/shelf.jpg" alt="shelf" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">зеркала</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      89.00-345.00 <span>&#36;</span></span>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only">Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only">Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-b">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img class="product__img" src="images/product-cart/things.jpg" alt="things" width="219"
+                      height="218" />
+                  </a>
+                  <h3 class="product__subtitle">предметы интерьера</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      95.00-229.00 <span>&#36;</span></span>
+                    <button class="product__favorites button" type="button">
+                      <span class="sr-only">Добавить в избранное</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="product__cart button" type="button">
+                      <span class="sr-only"> Добавить в корзину</span>
+                      <svg width="32" height="32">
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <a class="top-products__btn button" href="http://localhost:3000/catalog-page.html" target="_blank">VIEW
+            ALL</a>
+        </div>
+      </section>
+      <section class="consultation">
+        <div class="container">
+          <h2 class="consultation__title">Нужна помощь с выбором?</h2>
+          <p class="consultation__text">
+            Наши специалисты с радостью помогут Вам, оставьте свой номер
+            телефона!
+          </p>
+          <form class="consultation__form" action="#">
+            <label class="consultation__form-label" for="name">
+              <input class="consultation__form-input" type="text" id="name" placeholder="Как вас зовут?" />
+            </label>
+            <label class="consultation__form-label" for="phone">
+              <input class="consultation__form-input" type="tel" id="phone" placeholder="Ваш телефон" />
+            </label>
+            <button class="consultation__form-btn button" type="submit">
+              Связаться с нами
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="banners">
+        <div class="container">
+          <ul class="banners__list">
+            <li class="banners__item" style="background-image: url(images/banners/banner3.jpg)">
+              <span class="banners__text banners__text--white">Широкий выбор</span>
+              <span class="banners__title banners__title--white">
+                Новая коллекция мебели для дома и сздания особого уюта<span>&#8372;</span>
+              </span>
+              <a class="banners__link banners__link--white" href="#">Отправляйтесь за покупками</a>
+            </li>
+            <li class="banners__item" style="background-image: url(images/banners/banner1.jpg)">
+              <span class="banners__text">Всегда есть в наличии</span>
+              <span class="banners__title">Мы показываем только те товары, которые есть на складе и
+                доступны для доставки</span>
+              <a class="banners__link" href="#">Отправляйтесь за покупками</a>
+            </li>
+            <li class="banners__item" style="background-image: url(images/banners/banner2.jpg)">
+              <span class="banners__text">Товар как на картинке</span>
+              <span class="banners__title">Отправьте фотографию товара перед доставкой: убедитесь, что
+                что все выглядит так, как вы себе представляете</span>
+              <a class="banners__link" href="#">Отправляйтесь за покупками</a>
+            </li>
+          </ul>
+          <ul></ul>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <h2 class="blog__title">Последние статьи из нашего блога</h2>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog1.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog2.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog3.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog4.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog5.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+            <li class="blog__item">
+              <img class="blog__img" src="images/blog/blog6.jpg" alt="" />
+              <h4 class="blog__subtitle">Как создать настроение Лофт?</h4>
+              <p class="blog__text">
+                Этим летом мы выпустили немало обновлений, чтобы предоставить
+                вам современные и актуальные решения. Сегодня расскажем, как с
+                помощью разработок, оформить пространство в стиле лофт.
+                Дизайнеру на заметку!
+              </p>
+              <div class="blog__wrapper">
+                <a class="blog__link" href="">Читать далее</a>
+                <span class="blog__date">15 октября 2022</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__info">
+            <li class="footer__item">
+              <span class="footer__title">СЕРВИС</span>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Доставка и самовывоз
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                FAQ
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                О нас
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Сборка и доставка
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Оплата и возврат
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Гарантия
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Политика обработки персональных данных
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Бренды мебели
+              </a>
+            </li>
+          </ul>
+          <div class="footer__inner">
+            <address class="footer__address">
+              <span class="footer__title">Контакты</span>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a class="contacts__link link-animation" href="#">
+                    <svg width="32" height="32">
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                    Блог
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link link-animation" href="mailto:furniturestore.nn@gmail.com">
+                    <svg width="32" height="32">
+                      <use xlink:href="images/sprite.svg#email"></use>
+                    </svg>
+                    furniturestore.nn@gmail.com
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link link-animation" href="tel:+61423051336">
+                    <svg width="32" height="32">
+                      <use xlink:href="images/sprite.svg#icon-tel"></use>
+                    </svg>
+                    +61423051336
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link link-animation" href="#">
+                    Интернет-магазин мебели и товаров для дома РФ в Нижнем
+                    Новгороде
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <span class="footer__text"> ©2023</span>
+          </div>
+          <ul class="accept">
+            <li class="accept__item">
+              <img class="accept__img" src="images/visa.svg" alt="Visa" width="90" height="50" />
+            </li>
+            <li class="accept__item">
+              <img class="accept__img" src="images/mastercard.svg" alt="MasterCard" width="90" height="50" />
+            </li>
+            <li class="accept__item">
+              <img class="accept__img" src="images/applepay.svg" alt="apple pay" width="90" height="50" />
+            </li>
+            <li class="accept__item">
+              <img class="accept__img" src="images/paypal.svg" alt=" pay pal" width="90" height="50" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

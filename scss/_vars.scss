@@ -1,0 +1,43 @@
+$dark-text: #222222;
+$light-text:#f2f2f2;
+$title-color: #a88f52;
+$light-bg: linear-gradient(180deg, #ffdda1 0%, #f1ebe5 100%);
+$dark-bg:#1f1f1f;
+$accent: #6c584c;
+$hover: #ffcb69;
+$active: #eca62c;
+$focus: linear-gradient(180deg, #1b1b1b 0%, #775f46 100%);
+$opacity-bg: rgba(#494948, 0.3);
+$disabled:#343332a0;
+$button-bg: #6c584c;
+
+%background {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%rudablack-900 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 900;
+}
+
+%rudabold-700 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+}
+
+%rudaregular-400 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+}
+
+%rudasemibold-600 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 600;
+}
